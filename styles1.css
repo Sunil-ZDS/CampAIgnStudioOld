@@ -1,0 +1,121 @@
+/* Dark background with white text */
+/*body {
+    background-color: #1e1e2f; /* Dark background */
+    color: white;
+}
+
+/* Input Fields - Text & Text Area */
+
+/* Labels */
+.stTextInput > label,
+.stTextArea > label {
+    font-weight: 600;
+    color: white !important;
+}
+
+/* Input Boxes */
+input[type="text"],
+textarea {
+    background-color: #2c2c3d !important;
+    color: #ffffff !important;
+    border: 1px solid #444 !important;
+    padding: 8px !important;
+    border-radius: 6px !important;
+}
+
+/* Buttons */
+.stButton button {
+    background-color: #6a0dad !important; /* Purple */
+    color: white !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 10px 20px !important;
+    font-weight: bold !important;
+    transition: background-color 0.3s ease;
+}
+
+.stButton button:hover {
+    background-color: #5a0da0 !important;
+    cursor: pointer;
+}
+
+/* Section Headers - Output section */
+.section-header {
+    border-left: 5px solid #6a0dad;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.section-title {
+    border-left: 5px solid #7b1fa2;
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Feedback Section - Chat message bubbles */
+.user-msg {
+    background-color: #3a3a5a;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px 0;
+    color: white;
+    font-size: 0.95em;
+}
+
+.ai-msg {
+    background-color: #4a4a6a;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px 0;
+    color: white;
+    font-size: 0.95em;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: #ccc;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* Tagline styling */
+.tagline {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Scrollbar styling (optional) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+/* Tool Card Styling */
+.tool-card {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2c2c3d;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: default;
+    overflow: hidden;
+}
+
+.tool-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}

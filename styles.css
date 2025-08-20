@@ -1,0 +1,170 @@
+/* styles.css - Optimized Light Theme */
+/* ----------------------------------- */
+
+/* Base Styles */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Input Fields */
+.stTextInput > label,
+.stTextArea > label {
+    font-weight: 600;
+    color: #333 !important;
+}
+
+input[type="text"],
+textarea {
+    background-color: #fff !important;
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+    padding: 8px !important;
+    border-radius: 6px !important;
+}
+
+/* Button Styles */
+:root {
+    --button-gradient-start: #7b1fa2;
+    --button-gradient-end: #3f51b5;
+    --button-border-radius: 8px;
+}
+
+/* Gradient Border Button */
+.stButton > button {
+    border: 2px solid transparent !important;
+    border-radius: var(--button-border-radius) !important;
+    padding: 10px 20px !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    transition: box-shadow 0.2s, transform 0.2s !important;
+    border-image: linear-gradient(90deg, var(--button-gradient-start), var(--button-gradient-end)) 1 !important;
+    background: none !important;
+    color: #333 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Gradient Text for Button Label */
+.stButton > button span {
+    background: linear-gradient(90deg, var(--button-gradient-start), var(--button-gradient-end)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+/* Button Hover & Active States */
+.stButton > button:hover {
+    box-shadow: 0 2px 8px rgba(123, 31, 162, 0.15), 0 4px 16px rgba(63, 81, 181, 0.10) !important;
+    transform: translateY(-1px) !important;
+}
+.stButton > button:active {
+    transform: translateY(0) !important;
+    box-shadow: none !important;
+}
+.stButton > button:focus {
+    outline: none !important;
+    box-shadow: none !important; /* Remove purple border on focus */
+}
+
+/* Section Headers */
+.section-header {
+    border-left: 5px solid #6a0dad;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+.section-title {
+    border-left: 5px solid #7b1fa2;
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Chat Messages */
+.user-msg {
+    background-color: #e1f5fe;
+    color: #0d47a1;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px 0;
+    max-width: 70%;
+    margin-left: auto;
+    text-align: right;
+    font-size: 0.95em;
+    border: 1px solid #b3e5fc;
+}
+.ai-msg {
+    background-color: #f0f4f8;
+    color: #1a237e;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px 0;
+    max-width: 70%;
+    margin-right: auto;
+    text-align: left;
+    font-size: 0.95em;
+    border: 1px solid #dce7f1;
+}
+
+/* Footer & Tagline */
+.footer {
+    text-align: center;
+    color: #666;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+.tagline {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #888;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Tool Card */
+.tool-card {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: default;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+.tool-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+/* Button Icon Fixes */
+.stButton > button svg,
+.stButton > button i,
+.stButton > button svg path {
+    color: #333 !important;
+    fill: #333 !important;
+    -webkit-text-fill-color: unset !important;
+    background: unset !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+}
