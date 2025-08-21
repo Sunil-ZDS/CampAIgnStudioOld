@@ -1,5 +1,6 @@
 streamlit==1.36.0 # Frontend framework for building the UI 
-pydantic==2.9.0 # Core data validation and settings management. Used for structured data models
+# pydantic==2.9.0 # Core data validation and settings management. Used for structured data models
+pydantic>=2.10,<2.12
 openai==1.36.0 # Official OpenAI SDK
 # pydantic-ai==0.15.0 # The main AI agent framework
 pydantic-ai>=0.7.4
