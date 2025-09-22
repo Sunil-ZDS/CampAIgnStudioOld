@@ -9,15 +9,14 @@ class OrchestratorAgent:
     def __init__(self, model):
         self.agent = Agent(
             model=model,
-            result_type=CampaignBrief,
+            output_type=CampaignBrief,
             system_prompt=
 
             """You are a Marketing Campaign Orchestrator AI. Synthesize insights and handle revisions with:
             - Data-driven decision making
             - Cross-functional integration
             - Version control awareness
-            - Contextual understanding of revision requests""",
-            max_retries = 3
+            - Contextual understanding of revision requests"""
 
 
 

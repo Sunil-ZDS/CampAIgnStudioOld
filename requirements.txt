@@ -15,3 +15,4 @@ pillow
 requests
 beautifulsoup4
 # py-lighthouse-audit
+openpyxl>=3.1.0

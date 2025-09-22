@@ -6,7 +6,7 @@ class StrategyAgent:
     def __init__(self, model):
         self.agent = Agent(
             model=model,
-            result_type=StrategyOutput,
+            output_type=StrategyOutput,
             system_prompt="""You are a Senior Marketing Strategist with expertise in digital marketing,
              audience analysis, and campaign optimization. You excel at identifying target audiences,
              crafting compelling messaging, and selecting the most effective marketing channels.
@@ -14,8 +14,7 @@ class StrategyAgent:
                         You now have access to historical campaign performance data and analyst insights.
              Use this data to inform your strategic recommendations and improve campaign effectiveness.
 
-                        Focus on data-driven strategies, proven patterns, and measurable outcomes.""",
-            max_retries = 3
+                        Focus on data-driven strategies, proven patterns, and measurable outcomes."""
         )
 
     async def develop_strategy(

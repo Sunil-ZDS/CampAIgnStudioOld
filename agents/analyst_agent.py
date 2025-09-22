@@ -11,7 +11,7 @@ class AnalystAgent:
         self.db_manager = db_manager
         self.agent = Agent(
             model=model,
-            result_type=AnalysisOutput,
+            output_type=AnalysisOutput,
             system_prompt="""You are a Senior Marketing Data Analyst with expertise in campaign performance analysis,
              pattern recognition, and data-driven marketing insights. You excel at identifying success patterns from
              historical campaign data and translating them into actionable recommendations.
@@ -34,9 +34,13 @@ class AnalystAgent:
         """Analyze historical campaign data to identify success patterns"""
 
         # Gather data from database
+        print("DEBUG: Loading successful campaigns...")
         successful_campaigns = await self.db_manager.get_successful_campaigns(20)
+        print("DEBUG: Loaded successful campaigns.")
         channel_performance = await self.db_manager.get_channel_performance()
+        print("DEBUG: Loaded channel performance.")
         industry_insights = await self.db_manager.get_industry_insights(target_industry)
+        print("DEBUG: Loaded industry insights.")
 
         # Prepare analysis prompt
         analysis_prompt = f"""
@@ -67,7 +71,11 @@ class AnalystAgent:
 
         Focus on actionable insights that can be directly applied to strategy and creative development.
         """
+
+        print("DEBUG: Sending prompt to Azure OpenAI...")
         result = await self.agent.run(analysis_prompt)
+
+        print("DEBUG: Received response from Azure OpenAI.")
         return result.output
 
     def _format_campaign_data(self, campaigns: List[Dict]) -> str:

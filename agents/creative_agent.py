@@ -6,7 +6,7 @@ class CreativeAgent:
     def __init__(self, model):
         self.agent = Agent(
             model=model,
-            result_type=CreativeOutput,
+            output_type=CreativeOutput,
             system_prompt="""You are a Creative Director known for breakthrough creative campaigns
              that emotionally connect with audiences. You specialize in developing memorable taglines,
              compelling ad copy, and cohesive visual directions that drive engagement.
@@ -14,8 +14,8 @@ class CreativeAgent:
                         You now have access to historical campaign performance data and creative trends analysis.
              Use this data to inform your creative decisions and develop concepts that have proven to work.
 
-                        Focus on creativity that converts, resonates with the target market, and follows successful patterns.""",
-            max_retries = 3
+                        Focus on creativity that converts, resonates with the target market, and follows successful patterns."""
+
         )
 
     async def develop_creative(
