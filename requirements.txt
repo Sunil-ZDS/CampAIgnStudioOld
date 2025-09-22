@@ -8,8 +8,8 @@ pydantic-ai>=0.7.4
 python-dotenv==1.0.1 # Loads environment variables from .env
 nest_asyncio==1.5.8 # Allows nested event loops, particularly in environments like Jupyter or Streamlit where asyncio is already running
 # psycopg2-binary==2.9.9 # PostgreSQL adapter for Python. Provides synchronous access to PostgreSQL when needed
-psycopg2-binary
-asyncpg==0.29.0 # Asynchronous PostgreSQL driver.
+# psycopg2-binary
+# asyncpg==0.29.0 # Asynchronous PostgreSQL driver.
 requests
 pillow
 requests
